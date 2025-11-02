@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NotesApp - Organize Your Life</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo"><a href="index.html">Notesapp</a></div>
+      <nav>
+        <div class="navbar-links" id="navbarLinks"></div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Organize your thoughts with NotesApp</h1>
+          <p>
+            Simple, secure, and fast note-taking to keep your ideas and tasks
+            always at hand.
+          </p>
+          <button  class="btn-primary" id="getStartedBtn">
+            <a href="signup.html">Get started. It's free</a>
+          </button>
+        </div>
+        <div
+          class="hero-image"
+          aria-label="Placeholder image for note-taking app overview"
+        >
+          <img src="./public/main.png" alt="" />
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>Features</h2>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-img-placeholder">
+              <img src="public/cloud.png" height="80px" width="160px" />
+            </div>
+            <h3>Secure Cloud Sync</h3>
+            <p>
+              Your notes are encrypted and safely stored in the cloud for
+              instant access from any device.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-img-placeholder">
+              <img src="public/organize.png" height="80px" width="160px" />
+            </div>
+            <h3>Powerful Organization</h3>
+            <p>
+              Easily tag, search, and pin notes to stay organized and
+              productive.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-img-placeholder">
+              <img src="public/collab.png" height="80px" width="160px" />
+            </div>
+            <h3>Collaborate Seamlessly</h3>
+            <p>
+              Share notes with colleagues or friends and collaborate in real
+              time.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 NotesApp. All rights reserved.</footer>
+
+    <script src="src/main.js">
+
+      const fetchItems = async (url) =>{
+        const response = await fetch(url);
+        if (!response.ok){
+          console.log("Error fetching...");
+          
+        }
+      }
+      
+    </script>
+    <script src="src/nav.js"></script>
+  </body>
+</html>

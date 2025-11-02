@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyNotes - Organize Your Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="container">
+    <div class="logo"><a href="index.html">Notesapp</a></div>
+    <nav>
+      <div class="navbar-links" id="navbarLinks">
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form class="create-note-form" id="createNoteForm" autocomplete="off">
+      <h2>Create New Note</h2>
+      <input
+        type="text"
+        id="noteTitle"
+        name="title"
+        placeholder="Title"
+        required
+        maxlength="100"
+      />
+      <textarea
+        id="noteContent"
+        name="content"
+        placeholder="Content"
+        rows="1"
+        required
+        maxlength="1000"
+      ></textarea>
+      <button type="submit" id="addNoteBtn">Add Note</button>
+    </form>
+
+    <div class="notes-container" id="notesContainer">
+      <!-- Notes cards will be rendered here -->
+    </div>
+  </main>
+
+  <script src="src/main.js">
+  </script>
+  <script src="src/nav.js"></script>
+</body>
+</html>
