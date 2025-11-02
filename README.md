@@ -72,12 +72,19 @@ npm install
 
 ### Running the App
 
-To start the app, run:
+To start the server, in `js-notes-app` run:
 
 ```bash
-npm start
+cd backend
+npm run dev
 ```
 
+To start the client, in `js-notes-app` run:
+
+```bash
+cd frontend
+npm run dev
+```
 The app runs on the port defined by the `PORT` environment variable (default: 3000).
 
 ### Accessing the App
